@@ -64,7 +64,7 @@ jobs:
           path: local
 
       - name: Changelog
-        run: 'echo "Upstream tag: ${{ env.upstream_tag }} ${{ env.date }}" >> ./local/Changelog'
+        run: 'echo "Upstream tag: ${{ env.upstream_tag }} tar creation: ${{ env.date }}" > ./local/Changelog'
 
       - name: Create commit and tag
         uses: EndBug/add-and-commit@v9
